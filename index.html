@@ -210,6 +210,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/blog/archives/" rel="section">
             
@@ -258,7 +268,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://jiyi1990118.github.io/blog/blog/2017/06/29/hexo 代码高亮设置/">
+    <link itemprop="mainEntityOfPage" href="https://jiyi1990118.github.io/blog/blog/2017/06/30/hexo 下的标签云/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="惜缘叛逆">
@@ -277,7 +287,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2017/06/29/hexo 代码高亮设置/" itemprop="url">hexo 代码高亮设置</a></h1>
+                <a class="post-title-link" href="/blog/2017/06/30/hexo 下的标签云/" itemprop="url">hexo 下的标签云</a></h1>
         
 
         <div class="post-meta">
@@ -289,8 +299,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-29T16:22:23+08:00">
-                2017-06-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-30T16:22:23+08:00">
+                2017-06-30
               </time>
             
 
@@ -326,16 +336,31 @@
       
         
           
-            <h3 id="hexo-代码高亮"><a href="#hexo-代码高亮" class="headerlink" title="hexo 代码高亮"></a>hexo 代码高亮</h3><div class="example-code "><div class="example-title"><span class="exampletext">Example - </span><span class="label label-success">代码示例</span></div><pre><code class="xml"><span class="comment">&lt;!-- 标签方式: 直接在 文件中编写 HTML 来调用 --&gt;</span>
-<span class="tag">&lt;<span class="name">figure</span> <span class="attr">class</span>=<span class="string">"highlight bash"</span>&gt;</span><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"gutter"</span>&gt;</span><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"line"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"line"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"code"</span>&gt;</span><span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"line"</span>&gt;</span>code snippet<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"line"</span>&gt;</span>    <span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span><span class="tag">&lt;/<span class="name">figure</span>&gt;</span>
-
- <span class="comment">&lt;!-- HTML方式: 直接在 Markdown 文件中编写 HTML 来调用 --&gt;</span>
-    ``` xml
-        code snippet
-    ```"
+            <h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h2><div class="example-code "><div class="example-title"><span class="exampletext">Example - </span><span class="label label-success">新建一个页面，命名为 tags </span></div><pre><code class="bash">$ hexo new page <span class="string">"tags"</span>
 </code></pre>
 </div>
-<div class="note info"><span class="notespan info">More info:</span><p>以上两种外，还可以自定义tag</p>
+<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><div class="example-code "><div class="example-title"><span class="exampletext">Example - </span>编辑刚新建的页面，将页面的类型设置为 tags ，主题将自动为这个页面显示标签云</div><pre><code class="yml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">Tagcloud</span>
+<span class="attr">date:</span> <span class="number">2014</span><span class="bullet">-12</span><span class="bullet">-22</span> <span class="number">12</span><span class="string">:39:04</span>
+<span class="attr">type:</span> <span class="string">"tags"</span>
+<span class="meta">---</span>
+</code></pre>
+</div>
+<div class="note info"><span class="notespan info">注意</span><p>如果有启用多说 或者 Disqus 评论，默认页面也会带有评论。需要关闭的话，请添加字段 comments 并将值设置为 false</p>
+</div>
+<div class="example-code "><div class="example-title"><span class="exampletext">Example - </span><span class="label label-success">配置</span></div><pre><code class="yml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">Tagcloud</span>
+<span class="attr">date:</span> <span class="number">2017</span><span class="bullet">-6</span><span class="bullet">-30</span> <span class="number">12</span><span class="string">:39:04</span>
+<span class="attr">type:</span> <span class="string">"tags"</span>
+<span class="attr">comments:</span> <span class="literal">false</span>
+<span class="meta">---</span>
+</code></pre>
+</div>
+<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><div class="example-code "><div class="example-title"><span class="exampletext">Example - </span>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中</div><pre><code class="yml"><span class="attr">menu:</span>
+<span class="attr">  home:</span> <span class="string">/</span>
+<span class="attr">  archives:</span> <span class="string">/archives</span>
+<span class="attr">  tags:</span> <span class="string">/tags</span>
+</code></pre>
 </div>
           
         
@@ -421,6 +446,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/api/" itemprop="url" rel="index">
+                    <span itemprop="name">api</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -447,7 +494,7 @@
       
         
           
-            <h3 id="获取任意QQ好友动态头像-URL"><a href="#获取任意QQ好友动态头像-URL" class="headerlink" title="获取任意QQ好友动态头像 URL"></a>获取任意QQ好友动态头像 URL</h3><div class="example-code "><div class="example-title"><span class="exampletext">Example - </span><span class="label label-success">代码示例</span></div><pre><code class="xml">http://q2.qlogo.cn/headimg_dl?bs=qq&amp;dst_uin=QQ号码&amp;src_uin=QQ号码&amp;fid=QQ号码&amp;spec=100&amp;url_enc=0&amp;referer=bu_interface&amp;term_type=PC
+            <h3 id="获取任意QQ好友动态头像-URL"><a href="#获取任意QQ好友动态头像-URL" class="headerlink" title="获取任意QQ好友动态头像 URL"></a>获取任意QQ好友动态头像 URL</h3><div class="example-code "><div class="example-title"><span class="exampletext">Example - </span><span class="label label-success">请求的URL</span></div><pre><code class="xml">http://q2.qlogo.cn/headimg_dl?bs=qq&amp;dst_uin=QQ号码&amp;src_uin=QQ号码&amp;fid=QQ号码&amp;spec=100&amp;url_enc=0&amp;referer=bu_interface&amp;term_type=PC
 </code></pre>
 </div>
 <div class="note info"><span class="notespan info">More info:</span><p>把上面 “QQ号码” 都换成你们想要获取的QQ号，复制上面的址到浏览器里，即可以看到qq头像，如果是动态头像的话下载后加上.gif</p>
@@ -658,7 +705,25 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
