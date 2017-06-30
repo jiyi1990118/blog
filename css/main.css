@@ -745,10 +745,15 @@ pre .javascript .function {
   padding-top: 0 !important;
 }
 .note p:last-child {
+  font-size: 14px;
   margin-bottom: 0;
 }
 .note code {
   border-radius: 3px;
+}
+.note .notespan {
+  font-weight: 800;
+  padding-right: 5px;
 }
 .note+.note {
   margin-top: -5px;
@@ -760,7 +765,8 @@ pre .javascript .function {
 .default h3,
 .default h4,
 .default h5,
-.default h6 {
+.default h6,
+.default .notespan {
   color: #777;
 }
 .primary {
@@ -770,7 +776,8 @@ pre .javascript .function {
 .primary h3,
 .primary h4,
 .primary h5,
-.primary h6 {
+.primary h6,
+.primary .notespan {
   color: #428bca;
 }
 .success {
@@ -780,7 +787,8 @@ pre .javascript .function {
 .success h3,
 .success h4,
 .success h5,
-.success h6 {
+.success h6,
+.success .notespan {
   color: #5cb85c;
 }
 .danger {
@@ -790,7 +798,8 @@ pre .javascript .function {
 .danger h3,
 .danger h4,
 .danger h5,
-.danger h6 {
+.danger h6,
+.danger .notespan {
   color: #d9534f;
 }
 .warning {
@@ -800,7 +809,8 @@ pre .javascript .function {
 .warning h3,
 .warning h4,
 .warning h5,
-.warning h6 {
+.warning h6,
+.warning .notespan {
   color: #f0ad4e;
 }
 .info {
@@ -810,7 +820,8 @@ pre .javascript .function {
 .info h3,
 .info h4,
 .info h5,
-.info h6 {
+.info h6,
+.info .notespan {
   color: #5bc0de;
 }
 .btn {
@@ -1678,7 +1689,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #47ffff;
+  background: #bad7c7;
 }
 .links-of-blogroll {
   font-size: 13px;
