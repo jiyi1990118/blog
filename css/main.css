@@ -274,7 +274,7 @@ h6 {
   }
 }
 p {
-  margin: 0 0 25px 0;
+  margin: 0;
 }
 a {
   color: #37b6e6;
@@ -434,16 +434,17 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 100px 0 70px;
+  padding: 0;
   width: 700px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 900px;
+    width: 100%;
   }
 }
 .main {
   padding-bottom: 150px;
+  box-shadow: -1px -1px 15px #0b1923;
 }
 .main-inner {
   margin: 0 auto;
@@ -451,7 +452,7 @@ body {
 }
 @media (min-width: 1600px) {
   .container .main-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 .footer {
@@ -459,6 +460,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #fff;
   min-height: 50px;
 }
 .footer-inner {
@@ -468,7 +470,7 @@ body {
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 pre,
@@ -978,7 +980,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+  background: #104e56;
 }
 .site-meta {
   margin: 0;
@@ -988,6 +990,24 @@ pre .javascript .function {
   .site-meta {
     text-align: center;
   }
+}
+@media (min-width: 1600px) {
+  .site-meta {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.custom-logo-site-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-logo-site-title .brand {
+  color: #5097a9;
+  border: solid 1px #206f88;
+  padding: 5px 30px;
+  text-shadow: 1px 1px 10px #2986a0;
+  box-shadow: 1px 1px 10px #1e373e;
 }
 .brand {
   position: relative;
@@ -1009,14 +1029,15 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: cursive;
 }
 .site-subtitle {
   margin-top: 10px;
-  font-size: 13px;
-  color: #999;
+  font-family: cursive;
+  font-size: 14px;
+  color: #12799c;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1062,27 +1083,43 @@ pre .javascript .function {
 @media (min-width: 992px) {
   .site-nav {
     display: block !important;
+    background: #292727;
+    box-shadow: -1px 1px 5px #130d0d;
+  }
+}
+.menu-container {
+  display: flex;
+  margin: 0 auto;
+}
+@media (min-width: 1600px) {
+  .menu-container {
+    width: 1200px;
+    justify-content: space-between;
+  }
+  .menu-container .custom-logo-site-title {
+    display: flex;
+    align-items: center;
+  }
+  .menu-container .custom-logo-site-title .brand {
+    color: #0e4958;
+    padding: 0;
   }
 }
 .menu {
-  margin-top: 20px;
+  margin: 0px;
   padding-left: 0;
   text-align: center;
 }
 .menu .menu-item {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0;
   list-style: none;
-}
-@media screen and (max-width: 767px) {
-  .menu .menu-item {
-    margin-top: 10px;
-  }
+  padding: 10px 15px;
 }
 .menu .menu-item a {
-  color: #6499ad;
+  color: #3f7184;
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   line-height: inherit;
   border-bottom: 1px solid transparent;
   transition-property: border-color;
@@ -1091,7 +1128,8 @@ pre .javascript .function {
   transition-delay: 0s;
 }
 .menu .menu-item a:hover {
-  border-bottom-color: #222;
+  color: #7c959e;
+  border-bottom: solid 1px #7c959e;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1689,7 +1727,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c1daff;
+  background: #ed2bff;
 }
 .links-of-blogroll {
   font-size: 13px;
