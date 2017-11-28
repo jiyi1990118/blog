@@ -992,8 +992,8 @@ pre .javascript .function {
 }
 @media (min-width: 1200px) {
   .site-meta {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .custom-logo-site-title {
@@ -1727,7 +1727,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #93ff85;
+  background: #7d7f36;
 }
 .links-of-blogroll {
   font-size: 13px;
