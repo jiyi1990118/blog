@@ -1,3 +1,9 @@
+.menu-item {
+  a {
+    border: none;
+  }
+}
+
 //分类导航
 .nav-category {
   &:after {
@@ -198,7 +204,7 @@
 //文章展示容器
 .article-show-main {
   width: 100%;
-  padding:0 10px;
+  padding: 0 10px;
   min-height: 325px;
   border: solid 1px green;
   > h3 {
@@ -212,25 +218,30 @@
   &, > h3 {
     border-image: linear-gradient(135deg, #adf7bf 0, rgba(255, 184, 213, 0.83) 25%, rgba(165, 112, 184, 0.77) 33%, rgba(80, 151, 169, 0.7) 63%, rgba(150, 197, 158, 0.56) 84%, rgba(70, 124, 96, 0.46) 99%, rgba(68, 127, 92, 0.46) 100%) 1 1
   }
-  ul{
+  ul {
 
   }
-  li{
-    h5{
+  li {
+    h5 {
       margin: 0;
+      color: #1a87ca;
       font-weight: 100;
+      padding-left: 15px;
     }
-    a{
+    a {
       height: 35px;
-      border:none;
-      color: #10713d;
+      border: none;
       display: flex;
-      cursor:pointer;
-      align-items:center;
-      justify-content:space-between
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between
     }
-    span{
+    span {
+      color: #306535;
       font-weight: 100;
+      width: 150px;
+      text-align: right;
+      padding-right: 20px;
     }
   }
 
