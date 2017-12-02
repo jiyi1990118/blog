@@ -279,7 +279,7 @@ p {
 a {
   color: #37b6e6;
   text-decoration: none;
-  border-bottom: 1px solid #999;
+  /*border-bottom: 1px solid #999;*/
   word-wrap: break-word;
   transition: color 1s;
 }
