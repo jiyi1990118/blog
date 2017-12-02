@@ -7,7 +7,7 @@
 //分类导航
 .nav-category {
   &:after {
-    height: 2px;
+    height: 1px;
     width: 100%;
     content: '';
     display: block;
@@ -150,6 +150,8 @@
       color: #55b3bf;
       font-size: 18px;
       padding: 10px 0;
+      font-weight: 400;
+      text-shadow: 1px 1px 1px #c3c3c370;
     }
     p {
       color: #ffffff;
@@ -214,6 +216,7 @@
     font-weight: 100;
     color: #113f53;
     border-bottom: solid 1px #f5f5dc;
+    text-shadow: 1px 0px 1px #c5db9e;
   }
   &, > h3 {
     border-image: linear-gradient(135deg, #adf7bf 0, rgba(255, 184, 213, 0.83) 25%, rgba(165, 112, 184, 0.77) 33%, rgba(80, 151, 169, 0.7) 63%, rgba(150, 197, 158, 0.56) 84%, rgba(70, 124, 96, 0.46) 99%, rgba(68, 127, 92, 0.46) 100%) 1 1
@@ -223,10 +226,12 @@
   }
   li {
     h5 {
+      flex-grow: 1;
       margin: 0;
-      color: #1a87ca;
+      color: #0b734c;
       font-weight: 100;
       padding-left: 15px;
+      text-shadow: 1px 0 1px #ccdff1;
     }
     a {
       height: 35px;
@@ -234,14 +239,24 @@
       display: flex;
       cursor: pointer;
       align-items: center;
-      justify-content: space-between
+      justify-content: space-between;
+      justify-content:flex-end;
     }
     span {
-      color: #306535;
+      color: #309270;
       font-weight: 100;
-      width: 150px;
-      text-align: right;
-      padding-right: 20px;
+      width: 80px;
+      font-size: 14px;
+      background-color: #e6f1e6;
+      text-align: center;
+      border-radius: 5px;
+    }
+    p{
+      color: #908e8e;
+      width: 80px;
+      padding: 0 20px;
+      font-size: 14px;
+      font-weight: 100;
     }
   }
 
